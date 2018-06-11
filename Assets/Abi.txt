@@ -1,0 +1,29 @@
+[
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "AddArmy",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "GetArmyCount",
+		"outputs": [
+			{
+				"name": "count",
+				"type": "uint256"
+			},
+			{
+				"name": "name",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

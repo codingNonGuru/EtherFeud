@@ -1,0 +1,1178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{6BCF1753-8618-A6C0-7F1D-4322E3AED478}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_1_0;UNITY_2018_1;UNITY_2018;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_WEBGL;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_SPATIALTRACKING;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_LINUX;ENABLE_UNITY_COLLECTIONS_CHECKS;UNITY_TEAM_LICENSE;UNITY_POST_PROCESSING_STACK_V2</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\Nethereum\projects\BuildProjectFile\Program.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\projects\BuildProjectFile\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\projects\Nethereum.Portable\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI.UnitTests\AddressEncodingTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI.UnitTests\BoolEncodingTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI.UnitTests\ByteUtilTest.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI.UnitTests\DynamicArrayEncodingTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI.UnitTests\ElementaryBytesEncodingTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI.UnitTests\FunctionAttributeEncodingTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI.UnitTests\FunctionEncodingTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI.UnitTests\HexBigIntegerEncodingTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI.UnitTests\IntEncodingTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI.UnitTests\StaticArrayEncodingTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI.UnitTests\StringEncodingTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\ABIType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\AddressType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\ArrayType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\BoolType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Bytes32Type.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\BytesElementaryType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\BytesType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Decoders\AddressTypeDecoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Decoders\ArrayTypeDecoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Decoders\BoolTypeDecoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Decoders\Bytes32TypeDecoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Decoders\BytesElementaryTypeDecoder .cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Decoders\BytesTypeDecoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Decoders\DynamicArrayTypeDecoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Decoders\IntTypeDecoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Decoders\ITypeDecoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Decoders\StringTypeDecoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Decoders\TypeDecoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\DynamicArrayType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\EncoderDecoderHelpers.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Encoders\AddressTypeEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Encoders\ArrayTypeEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Encoders\BoolTypeEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Encoders\Bytes32TypeEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Encoders\BytesElementaryTypeEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Encoders\BytesTypeEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Encoders\DynamicArrayTypeEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Encoders\IntTypeEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Encoders\ITypeEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Encoders\StaticArrayTypeEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Encoders\StringTypeEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\AttributeEncoding\ParameterAttributeValue.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\AttributeEncoding\ParameterOutputProperty.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\Attributes\AttributesToABIExtractor.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\Attributes\EventAttribute.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\Attributes\FunctionAttribute.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\Attributes\FunctionOutputAttribute.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\Attributes\ParameterAttribute.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\ConstructorCallEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\EventTopicDecoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\FunctionCallDecoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\FunctionCallEnconder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\ParameterDecoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\ParameterOutput.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\ParametersEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\SerpentSignatureEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\FunctionEncoding\SignatureEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\IntType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\JsonDeserialisation\ABIDeserialiser.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\JsonDeserialisation\ExpandoConvertor.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Model\ConstructorABI.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Model\ContractABI.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Model\EventABI.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Model\FunctionABI.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Model\Parameter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\net35\IntrospectionExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\StaticArrayType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\StringType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\TupleType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\TupleTypeDecoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\TupleTypeEncoder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Util\ByteUtil.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ABI\Util\NumberUtilExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts.IntegrationTests\ABIStructsTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts.IntegrationTests\AccountFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts.IntegrationTests\AccountTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts.IntegrationTests\ClientFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts.IntegrationTests\NonceTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts.IntegrationTests\SignOfflineTransactionTest.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts.IntegrationTests\TransactionInterceptorTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts.IntegrationTests\Web3Factory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts.IntegrationTests\XUnitConfiguration.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts\Account.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts\AccountSignerTransactionManager.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts\AccountTransactionSigningInterceptor.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts\Managed\ManagedAccount.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts\Managed\ManagedAccountTransactionManager.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Accounts\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.BigInteger.N351\BigInteger.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.BigInteger.N351\BigIntegerCalculator.AddSub.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.BigInteger.N351\BigIntegerCalculator.BitsBuffer.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.BigInteger.N351\BigIntegerCalculator.DivRem.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.BigInteger.N351\BigIntegerCalculator.FastReducer.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.BigInteger.N351\BigIntegerCalculator.GcdInv.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.BigInteger.N351\BigIntegerCalculator.PowMod.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.BigInteger.N351\BigIntegerCalculator.SquMul.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.BigInteger.N351\BigNumber.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.BigInteger.N351\FormatProvider.BigInteger.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.BigInteger.N351\FormatProvider.Number.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.BigInteger.N351\FormatProvider.NumberBuffer.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.BigInteger.N351\NumericHelpers.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.BigInteger.N351\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\AccountFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\CQS\ContractHandlers.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\CQS\FixedArrayQuery.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\CQS\FixedMultipleArrayQuery.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\CQS\SimpleMessage.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\Deployment\ContractConstructorDeploymentAndCall.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\Deployment\ContractDeploymentAndCall.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\Deployment\DeploymentNullIssue.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\EncodingInputOutput\Bytes1FixedArraySupport.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\EncodingInputOutput\EncodingIssueGeth1_7.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\EncodingInputOutput\EventAddressIntString.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\EncodingInputOutput\FunctionOutputDTOTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\EncodingInputOutput\IndexedEvents.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\EncodingInputOutput\IntTypeIntegrationTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\EncodingInputOutput\SmartContractSha3Hashes.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\FiltersEvents\EventFilterTest.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\FiltersEvents\EventFilterTopic.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\FiltersEvents\EventFilterWith2Topics.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\FiltersEvents\EventFilterWith3Topics.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\Issues\Issue24.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\Issues\Issue78.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\Issues\TestIssueGasAllDataOutput.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\Logging\LoggingTest.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\ReceiptStatusTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\SmartContracts\CallStateFromPreviousBlock.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\Web3Factory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.IntegrationTests\XUnitConfiguration.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.UnitTests\EventLogSortingTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.UnitTests\FilterLogSortingTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts.UnitTests\Web3FunctionEncodingDecoding.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\Builders\ContractBuilder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\Builders\DeployContractTransactionBuilder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\Builders\EventBuilder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\Builders\EventTopicBuilder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\Builders\FunctionBuilder.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\Builders\FunctionBuilderBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\Comparers\EventLogBlockNumberTransactionIndexComparer.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\Comparers\FilterLogBlockNumberTransactionIndexComparer.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\Contract.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\CQS\ContractDefinition.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\CQS\ContractDeployment.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\CQS\ContractDeploymentHandler.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\CQS\ContractHandler.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\CQS\ContractHandlerBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\CQS\ContractMessage.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\CQS\ContractQueryHandler.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\CQS\ContractTransactionHandler.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\CQS\ContractTransactionHandlerBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\DeployContractService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\EthApiContractService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\Event.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\EventLog.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\Function.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\FunctionBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\IEventLog.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Contracts\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Desktop.Sample\App.xaml.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Desktop.Sample\MainWindow.xaml.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Desktop.Sample\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Desktop.Sample\Properties\Resources.Designer.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Desktop.Sample\Properties\Settings.Designer.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ENS.IntegrationTests\ClientFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ENS.IntegrationTests\ENS\ENSLocalTest.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ENS.IntegrationTests\XUnitConfiguration.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ENS.UnitTests\ENSEncodingTest.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ENS\DeedService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ENS\EnsService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ENS\EnsUtil.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ENS\FIFSRegistrar.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ENS\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ENS\PublicResolver.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.ENS\RegistrarService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.EVM.UnitTests\VmTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.EVM\GasCost.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.EVM\GasPriceTier.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.EVM\Instruction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.EVM\InstructionInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.EVM\InstructionInfoCollection.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.EVM\Program.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.EVM\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.EVM\VM.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console.UnitTests\AppTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console.UnitTests\CommandTests\GenerateFromAbiCommandTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console.UnitTests\CommandTests\GenerateFromProjectCommandTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console.UnitTests\ConfigurationTests\FactoryTests\FromAbi\FromAbiTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console.UnitTests\ConfigurationTests\FactoryTests\FromProject\WithConfigFileTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console.UnitTests\ConfigurationTests\FactoryTests\FromProject\WithoutConfigFileTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console.UnitTests\ConfigurationTests\GeneratorConfigurationUtilTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console.UnitTests\GeneratorWrappers\CodeGenerationWrapperTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console\App.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console\Commands\GenerateFromAbiCommand.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console\Commands\GenerateFromProjectCommand.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console\Configuration\ABIConfiguration.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console\Configuration\GeneratorConfiguration.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console\Configuration\GeneratorConfigurationConstants.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console\Configuration\GeneratorConfigurationFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console\Configuration\GeneratorConfigurationUtils.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console\Configuration\IGeneratorConfigurationFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console\Generation\CodeGenerationWrapper.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console\Generation\ICodeGenerationWrapper.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console\Program.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generator.Console\sample\StandardContractConfigCreator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.BuildDuoProjectFile\Program.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.BuildDuoProjectFile\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop.Core\Bootstrapper.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop.Core\Contract\ContractPanel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop.Core\Contract\ContractViewModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop.Core\ContractLibrary\ContractLibraryClassGeneratorCommand.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop.Core\ContractLibrary\ContractLibraryPanel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop.Core\ContractLibrary\ContractLibraryViewModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop.Core\ContractLibrary\NetstandardLibraryGeneratorCommand.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop.Core\IMainTab.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop.Core\Infrastructure\UI\MessageBoxExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop.Core\Infrastructure\UI\SpacingPaddingDefaults.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop.Core\Infrastructure\UI\ViewModelBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop.Core\Properties\Resources.Designer.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop.Core\Tabs\TabPageMainNethereumLibrary.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop.Core\Tabs\TabPageNethereumLibrary.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop\Nethereum.Generators.Desktop.Desktop\Program.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop\Nethereum.Generators.Desktop.XamMac\Program.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop\Nethereum.Generators.Desktop\MainForm.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Desktop\Nethereum.Generators.Desktop\MainForm.eto.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.DuoCode\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.IntegrationTests\ContractProjectGeneratorEndToEndTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.IntegrationTests\NetStandardLibraryGeneratorEndToEndTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\CQS\AllowanceFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\CQS\AllowedFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\CQS\ApproveFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\CQS\BalanceOfFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\CQS\BalancesFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\CQS\DecimalsFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\CQS\MyContractNameDeployment.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\CQS\NameFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\CQS\SymbolFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\CQS\TotalSupplyFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\CQS\TransferFromFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\CQS\TransferFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\DTOs\AllowanceOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\DTOs\AllowedOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\DTOs\ApprovalEventDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\DTOs\BalanceOfOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\DTOs\BalancesOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\DTOs\DecimalsOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\DTOs\NameOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\DTOs\SymbolOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\DTOs\TotalSupplyOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\DTOs\TransferEventDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.JavaScript\codeGenNodeTests\MyContractName\Service\MyContractNameService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Net\ContractLibrary\ContractLibraryWriter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Net\ContractLibrary\GenerateClassesCommand.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Net\ContractLibrary\GenerateProjectFileCommand.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Net\CoreUtils.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Net\GeneratedFileWriter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Net\GeneratorModelABIDeserialiser.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Net\IGeneratedFileWriter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Plugin.UnitTestLib\Bootstrapper.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Plugin.UnitTestLib\Tabs\TabPageMainNethereumUnitTest.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Plugin.UnitTestLib\Tabs\TabPageNethereumUnitTest.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Tests.Common\ProjectTestContext.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Tests.Common\TestData\ContractMetaData.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Tests.Common\TestData\TestContracts.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.Tests.Common\TestData\TestEnvironment.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.UnitTests\Expectations\ExpectedContentRepository.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.UnitTests\Tests\CSharp\ContractDeploymentCQSMessageGeneratorTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.UnitTests\Tests\CSharp\ContractProjectGeneratorTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.UnitTests\Tests\CSharp\EventDTOGeneratorTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.UnitTests\Tests\CSharp\FunctionCQSMessageGeneratorTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.UnitTests\Tests\CSharp\FunctionOutputDTOGeneratorTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.UnitTests\Tests\CSharp\ServiceGeneratorTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.UnitTests\Tests\GeneratorTestBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\ABI\GeneratorModel\FunctionABIModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\ABI\GeneratorModel\ParameterABIModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\ABI\GeneratorModel\ParameterABIModelTypeMap.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\ABI\Model\ConstructorABI.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\ABI\Model\ContractABI.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\ABI\Model\EventABI.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\ABI\Model\FunctionABI.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\ABI\Model\ParameterABI.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\ABI\TypeConvertors\ABITypeToCSharpType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\ABI\TypeConvertors\ABITypeToDotNetTypeBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\ABI\TypeConvertors\ABITypeToFSharpType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\ABI\TypeConvertors\ABITypeToVBType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\ContractProjectGenerator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\ClassFileTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\ClassGeneratorBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\ClassTemplateBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\CodeGenLanguage.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\CodeGenLanguageExt.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\CommonGenerators.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\CsharpClassFileTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\FSharpClassFileTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\GeneratedFile.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\IClassModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\IClassTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\IFileGenerator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\IGenerator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\IMessage.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\ITypeConvertor.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\MessageMap.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\Parameter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\ParameterDirection.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\ParameterMap.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\ParameterMapperAssignerCSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\ParameterMapperAssignerTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\ParameterMapperAssignerVbTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\ParameterModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\SpaceUtils.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\TypeMessageModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\Utils.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Core\VbClassFileTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\CQS\ContractDeploymentCQSMessageGenerator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\CQS\ContractDeploymentCQSMessageModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\CQS\CSharp\ContractDeploymentCQSMessageCSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\CQS\CSharp\FunctionCQSMessageCSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\CQS\FSharp\ContractDeploymentCQSMessageFSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\CQS\FSharp\FunctionCQSMessageFSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\CQS\FunctionCQSMessageGenerator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\CQS\FunctionCQSMessageModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\CQS\Vb\ContractDeploymentCQSMessageVbTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\CQS\Vb\FunctionCQSMessageVbTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\CSharp\EventDTOCSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\CSharp\FunctionOutputDTOCSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\CSharp\ParameterABIEventDTOCSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\CSharp\ParameterABIFunctionDTOCsharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\EventDTOGenerator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\EventDTOModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\FSharp\EventDTOFSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\FSharp\FunctionOutputDTOFSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\FSharp\ParameterABIEventDTOFSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\FSharp\ParameterABIFunctionDTOFSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\FunctionOutputDTOGenerator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\FunctionOutputDTOModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\Vb\EventDTOVbTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\Vb\FunctionOutputDTOVbTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\Vb\ParameterABIEventDTOCVbTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\DTOs\Vb\ParameterABIFunctionDTOVbTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\NetStandardLibraryGenerator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Service\CSharp\ContractDeploymentServiceMethodsCSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Service\CSharp\FunctionServiceMethodCSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Service\CSharp\ServiceCSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Service\FSharp\ContractDeploymentServiceMethodsFSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Service\FSharp\FunctionServiceMethodFSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Service\FSharp\ServiceFSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Service\ServiceGenerator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Service\ServiceModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Service\Vb\ContractDeploymentServiceMethodsVbTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Service\Vb\FunctionServiceMethodVbTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\Service\Vb\ServiceVbTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\XUnit\CSharp\SimpleTestCSharpTemplate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\XUnit\SimpleTestGenerator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Generators\XUnit\SimpleTestModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\ClientFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\ContractTest\DeployContractCallFunctionTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\ContractTest\DeployContractExecuteTransactionFilterEventTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\IRPCRequestTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\RPCRequestTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\AdminPeersTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugBlockProfileTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugCpuProfileTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugDumpBlockTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugGcStatsTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugGetBlockRlpTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugGoTraceTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugMemStatsTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugSeedHashTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugSetBlockProfileRateTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugStacksTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugStartCPUProfileTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugStartGoTraceTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugStopCPUProfileTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugStopGoTraceTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugTraceBlockByHashTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugTraceBlockByNumberTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugTraceBlockFromFileTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugTraceBlockTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugTraceTransactionTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugVerbosityTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\DebugVmoduleTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\MinerSetGasPriceTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\MinerStartTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\Testers\MinerStopTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth.IntegrationTests\TestSettings.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\AdminApiService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\DebugApiService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\MinerApiService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\Admin\AdminAddPeer.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\Admin\AdminDatadir.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\Admin\AdminNodeInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\Admin\AdminPeers.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\Admin\AdminSetSolc.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\Admin\AdminStartRPC.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\Admin\AdminStartWS.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\Admin\AdminStopRPC.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\Admin\AdminStopWS.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\ApiMethods.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugBacktraceAt.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugBlockProfile.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugCpuProfile.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugDumpBlock.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugGcStats.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugGetBlockRlp.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugGoTrace.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugMemStats.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugSeedHash.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugSetBlockProfileRate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugStacks.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugStartCPUProfile.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugStartGoTrace.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugStopCPUProfile.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugStopGoTrace.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugTraceBlock.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugTraceBlockByHash.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugTraceBlockByNumber.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugTraceBlockFromFile.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugTraceTransaction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugVerbosity.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DebugVmodule.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\GethDebug\DTOs\TraceTransactionOptions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\Miner\MinerSetGasPrice.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\Miner\MinerStart.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\RPC\Miner\MinerStop.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\VmStackErrorChecker.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Geth\Web3Geth.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.HdWallet.IntegrationTests\TokenTransferTest.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.HdWallet.UnitTests\WalletTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.HDWallet\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.HDWallet\SecureRandom.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.HDWallet\Wallet.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Hex\BigInteger.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Hex\HexConvertors\Extensions\HexBigIntegerConvertorExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Hex\HexConvertors\Extensions\HexByteConvertorExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Hex\HexConvertors\Extensions\HexStringUTF8ConvertorExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Hex\HexConvertors\HexBigIntegerBigEndianConvertor.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Hex\HexConvertors\HexUTF8StringConvertor.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Hex\HexConvertors\IHexConvertor.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Hex\HexTypes\HexBigInteger.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Hex\HexTypes\HexType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Hex\HexTypes\HexTypeFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Hex\HexTypes\HexTypeJsonConverter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Hex\HexTypes\HexUTF8String.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Hex\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.IntegrationTesting\GethTestRunner.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.IntegrationTesting\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.IntegrationTesting\TransactionHelpers.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\ClientBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\Configuration.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\DefaultJsonSerializerSettingsFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\IClient.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\IRpcRequestHandler.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\RequestInterceptor.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\RpcClientTimeoutException.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\RpcClientUnknownException.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\RpcError.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\RPCLogger.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\RpcMessages\RpcMessages.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\RpcRequest.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\RpcRequestResponseHandler.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\RpcRequestResponseHandlerNoParam.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.Client\RPCResponseException.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.IpcClient\IpcClient.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.IpcClient\IpcClientBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.IpcClient\JsonSerializerExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.IpcClient\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.IpcClient\UnixDomainSocketEndPoint.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.IpcClient\UnixIpcClient.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.RpcClient\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.RpcClient\RpcClient.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.RpcClient\SimpleRpcClient.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.UnixIpcClient\RpcConnectionNotAvailableException.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.UnixIpcClient\UnixDomainSocketClient.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.JsonRpc.UnixIpcClient\UnixEndPoint.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore.Console.Sample\Program.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore.Console.Sample\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore.UnitTests\GenerateAndCreateKeyStoreFileTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore.UnitTests\KeyStoreCryptoTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore.UnitTests\KeyStoreServiceTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\Crypto\DecryptionException.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\Crypto\IRandomBytesGenerator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\Crypto\KeyStoreCrypto.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\Crypto\RandomBytesGenerator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\Crypto\SCrypt.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\IKeyStoreService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\InvalidKdfException.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\KeyStoreKdfChecker.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\KeyStorePbkdf2Service.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\KeyStoreScryptService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\KeyStoreService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\KeyStoreServiceBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\Model\CipherParams.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\Model\CryptoInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\Model\KdfParams.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\Model\KeyStore.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\Model\Pbkdf2Params.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\Model\ScryptParams.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.KeyStore\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\ClientFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\IRPCRequestTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\RPCRequestTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Accounts\ParityAccountsInfoTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Accounts\ParityDefaultAccountTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Accounts\ParityGenerateSecretPhraseTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Accounts\ParityHardwareAccountsInfoTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\BlockAuthoring\ParityDefaultExtraDataTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\BlockAuthoring\ParityExtraDataTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\BlockAuthoring\ParityGasCeilTargetTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\BlockAuthoring\ParityGasFloorTargetTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\BlockAuthoring\ParityMinGasPriceTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\BlockAuthoring\ParityTransactionsLimitTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Development\ParityDevLogsLevelsTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Development\ParityDevLogsTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Main\ParityConsensusCapabilityTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Main\ParityListOpenedVaultsTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Main\ParityListVaultsTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Main\ParityLocalTransactionsTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Main\ParityPendingTransactionsStatsTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Main\ParityReleasesInfoTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Main\ParityVersionInfoTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Network\ParityChainStatusTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Network\ParityGasPriceHistogramTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Network\ParityNetPeersTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Network\ParityNetPortTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Network\ParityPendingTransactionsTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Trace\TraceBlockTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Trace\TraceCallTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Trace\TraceFilterTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Trace\TraceGetTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Trace\TraceRawTransactionTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\Tests\Trace\TraceTransactionTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity.IntegrationTests\TestSettings.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\AccountsApiService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\AdminApiService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\BlockAuthoringApiService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\NetworkApiService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Accounts\ParityAccountsInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Accounts\ParityDefaultAccount.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Accounts\ParityGenerateSecretPhrase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Accounts\ParityHardwareAccountsInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Admin\ParityConsensusCapability.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Admin\ParityListOpenedVaults.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Admin\ParityListVaults.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Admin\ParityLocalTransactions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Admin\ParityPendingTransactionsStats.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Admin\ParityReleasesInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Admin\ParityVersionInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\ApiMethods.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\BlockAuthoring\ParityDefaultExtraData.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\BlockAuthoring\ParityExtraData.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\BlockAuthoring\ParityGasCeilTarget.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\BlockAuthoring\ParityGasFloorTarget.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\BlockAuthoring\ParityMinGasPrice.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\BlockAuthoring\ParityTransactionsLimit.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Development\ParityDevLogs.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Development\ParityDevLogsLevels.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Network\ParityChainStatus.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Network\ParityGasPriceHistogram.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Network\ParityNetPeers.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Network\ParityNetPort.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Network\ParityPendingTransactions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Trace\TraceBlock.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Trace\TraceCall.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Trace\TraceDTOs\TraceFilterDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Trace\TraceFilter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Trace\TraceGet.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Trace\TraceRawTransaction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Trace\TraceTransaction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\RPC\Trace\TraceType.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\TraceApiService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Parity\Web3Parity.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum.Tests\DefaultSettings.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum.Tests\QuorumChainRpcTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum.Tests\QuorumPrivateContractTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\RPC\ApiMethods.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\RPC\DTOs\BlockMakeStratregy.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\RPC\DTOs\NodeInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\RPC\DTOs\PrivateTransactionInput.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\RPC\Interceptors\PrivateForInterceptor.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\RPC\QuorumCanonicalHash.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\RPC\QuorumIsBlockMaker.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\RPC\QuorumIsVoter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\RPC\QuorumMakeBlock.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\RPC\QuorumNodeInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\RPC\QuorumPauseBlockMaker.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\RPC\QuorumResumeBlockMaker.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\RPC\QuorumVote.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\RPC\Services\QuorumChainService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Quorum\Web3Quorum.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RLP.UnitTests\RLPTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RLP\ConvertorForRLPEncodingExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RLP\IRLPElement.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RLP\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RLP\RLP.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RLP\RLPCollection.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RLP\RLPItem.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RLP\RLPStringFormatter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.ClassesExtractor\Program.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.ClassesExtractor\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.ClassesExtractor\RequestInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.ClassesExtractor\RequestUnityGenerator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.ClassesExtractor\RPCRequestInfoExtractor.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\ClientFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthAccountsTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthBlockNumberTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthCallTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthCoinBaseTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthCompileSolidityTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthEstimateGasTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGasPriceTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetBalanceTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetBlockByHashTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetBlockTransactionCountByHashTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetBlockTransactionCountByNumberTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetCodeTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetCompilersTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetStorageAtTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetTransactionByBlockHashAndIndexTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetTransactionByBlockNumberAndIndexTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetTransactionByHashTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetTransactionCountTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetTransactionReceiptTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetUncleByBlockHashAndIndexTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetUncleByBlockNumberAndIndexTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetUncleCountByBlockHashTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthGetUncleCountByBlockNumberTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthHashrateTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthMiningTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthNewBlockFilterTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthNewPendingTransactionFilterTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthProtocolVersionTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthSendRawTransactionTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthSendTransactionTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthSignTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\EthSyncingTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\IRPCRequestTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\NetListeningTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\NetPeerCountTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\NetVersionTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\PersonalListAccountsTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\PersonalLockAccountTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\PersonalSignAndSendTransactionTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\PersonalUnlLockAccountTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\RPCRequestTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\ShhNewIdentityTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\ShhVersionTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\Web3ClientVersionTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\Testers\Web3Sha3Tester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.IntegrationTests\TestSettings.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.Sample\Program.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.Sample\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.UnitTests\FormatTesters\CallInputFormatTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.UnitTests\InterceptorTests\OverridingInterceptorMock.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC.UnitTests\InterceptorTests\OverridingInterceptorTest.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Accounts\IAccount.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\ApiMethods.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Constants.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Blocks\EthBlockNumber.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Blocks\EthGetBlockByHash.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Blocks\EthGetBlockByNumber.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Blocks\EthGetBlockTransactionCountByHash.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Blocks\EthGetBlockTransactionCountByNumber.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Blocks\EthGetBlockWithTransactionsHashesByNumber.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Compilation\EthCompileLLL.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Compilation\EthCompileSerpent.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Compilation\EthCompileSolidity.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Compilation\EthGetCompilers.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\DTOs\Block.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\DTOs\BlockParameter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\DTOs\BlockParameterJsonConverter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\DTOs\BlockWithTransactionHashes.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\DTOs\BlockWithTransactions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\DTOs\CallInput.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\DTOs\EthNewFilterInput.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\DTOs\FilterLog.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\DTOs\SyncingOutput.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\DTOs\Transaction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\DTOs\TransactionInput.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\DTOs\TransactionReceipt.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\EthAccounts.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\EthCoinBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\EthGasPrice.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\EthGetBalance.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\EthGetCode.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\EthGetStorageAt.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\EthProtocolVersion.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\EthSign.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\EthSyncing.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Exceptions\ContractDeploymentException.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Filters\EthGetFilterChanges.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Filters\EthGetFilterChangesForBlockOrTransaction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Filters\EthGetFilterLogs.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Filters\EthGetFilterLogsForEthNewFilter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Filters\EthGetLogs.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Filters\EthNewBlockFilter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Filters\EthNewFilter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Filters\EthNewPendingTransactionFilter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Filters\EthUninstallFilter.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\IDefaultBlock.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Mining\EthGetWork.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Mining\EthHashrate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Mining\EthMining.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Mining\EthSubmitHashrate.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Mining\EthSubmitWork.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Services\EthApiBlockService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Services\EthApiCompilerService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Services\EthApiFilterService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Services\EthApiMiningService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Services\EthApiTransactionsService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Services\EthApiUncleService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Transactions\EthCall.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Transactions\EthEstimateGas.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Transactions\EthGetTransactionByBlockHashAndIndex.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Transactions\EthGetTransactionByBlockNumberAndIndex.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Transactions\EthGetTransactionByHash.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Transactions\EthGetTransactionCount.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Transactions\EthGetTransactionReceipt.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Transactions\EthSendRawTransaction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Transactions\EthSendTransaction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Uncles\EthGetUncleByBlockHashAndIndex.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Uncles\EthGetUncleByBlockNumberAndIndex.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Uncles\EthGetUncleCountByBlockHash.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Eth\Uncles\EthGetUncleCountByBlockNumber.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\EthApiService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Infrastructure\GenericRpcRequesteResponseHandlerNoParam.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Net\NetListening.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Net\NetPeerCount.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Net\NetVersion.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\NetApiService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\NonceServices\InMemoryNonceService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\NonceServices\INonceService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Personal\PersonalListAccounts.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Personal\PersonalLockAccount.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Personal\PersonalNewAccount.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Personal\PersonalSignAndSendTransaction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Personal\PersonalUnlockAccount.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\PersonalApiService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\RpcClientWrapper.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Shh\ShhNewIdentity.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Shh\ShhVersion.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\ShhApiService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\TransactionManagers\ITransactionManager.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\TransactionManagers\TransactionManager.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\TransactionManagers\TransactionManagerBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\TransactionReceipts\ITransactionReceiptService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\TransactionReceipts\TransactionReceiptPollingService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Web3\Web3ClientVersion.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.RPC\Web3\Web3Sha3.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer.IntegrationTests\AccountFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer.IntegrationTests\SignedEIP155.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer.IntegrationTests\SignedTransactionManagerTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer.IntegrationTests\TransactionSigningTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer.IntegrationTests\Web3Factory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer.IntegrationTests\XUnitConfiguration.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer.UnitTests\Eip155SignerTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer.UnitTests\EthereumMessageSignerTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer.UnitTests\MessageSignerTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer.UnitTests\RLPSignerTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer.UnitTests\TransactionTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\Chain.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\Crypto\DeterministicDSAExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\Crypto\DeterministicECDSA.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\Crypto\ECDSASignature.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\Crypto\ECKey.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\EthECDSASignature.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\EthECDSASignatureFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\EthECKey.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\EthereumMessageSigner.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\MessageSigner.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\RLPSigner.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\Transaction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\TransactionBase.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\TransactionChainId.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\TransactionFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Signer\TransactionSigner.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20.IntegrationTests\AccountFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20.IntegrationTests\Erc20TokenTester.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20.IntegrationTests\Web3Factory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20.IntegrationTests\XUnitConfiguration.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\CQS\AllowanceFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\CQS\AllowedFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\CQS\ApproveFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\CQS\BalanceOfFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\CQS\BalancesFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\CQS\DecimalsFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\CQS\EIP20Deployment.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\CQS\NameFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\CQS\SymbolFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\CQS\TotalSupplyFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\CQS\TransferFromFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\CQS\TransferFunction.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\DTOs\AllowanceOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\DTOs\AllowedOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\DTOs\ApprovalEventDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\DTOs\BalanceOfOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\DTOs\BalancesOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\DTOs\DecimalsOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\DTOs\NameOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\DTOs\SymbolOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\DTOs\TotalSupplyOutputDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\DTOs\TransferEventDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\Events\DTO\ApprovalEvent.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\Events\DTO\TransferEvent.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.StandardTokenEIP20\StandardTokenService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Tutorials\Nethereum.Tutorials.Account\AccountCreator.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Tutorials\Nethereum.Tutorials.Account\AccountTransfer.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Tutorials\Nethereum.Tutorials.Account\Deployment\Deployment.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Tutorials\Nethereum.Tutorials.Account\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Tutorials\Nethereum.Tutorials.Core\CallTransactionEvents\CallTranEvents.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Tutorials\Nethereum.Tutorials.Core\Deployment\Deployment.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Tutorials\Nethereum.Tutorials.Core\FunctionDTOs\FunctionDTO.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Tutorials\Nethereum.Tutorials\Deployment\Deployment.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Tutorials\Nethereum.Tutorials\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Unity\RpcModel\RpcModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Unity\TransactionSignedUnityRequest.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Unity\UnityRequest.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Unity\UnityRpcClient.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Unity\UnityRPCRequests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Uport.IntegrationTests\UportRegistryServiceTest.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Uport\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Uport\UportRegistry.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Util.UnitTests\AddressUtilTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Util.UnitTests\BigDecimalTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Util.UnitTests\ConversionTests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Util.UnitTests\Sha3Tests.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Util\AddressUtil.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Util\BigDecimal.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Util\BigIntegerExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Util\ByteUtil.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Util\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Util\Sha3Keccack.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Util\UnitConversion.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web.Sample\App_Start\AutomapperWebConfiguration.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web.Sample\App_Start\BundleConfig.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web.Sample\App_Start\FilterConfig.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web.Sample\App_Start\FontAwesomeBundleConfig.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web.Sample\App_Start\RouteConfig.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web.Sample\App_Start\Startup.Auth.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web.Sample\Controllers\HomeController.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web.Sample\Global.asax.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web.Sample\Model\Dao\Proposal.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web.Sample\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web.Sample\Services\DaoService.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web.Sample\Startup.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web.Sample\ViewModels\ProposalViewModel.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web3.IntegrationTests\AccountFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web3.IntegrationTests\Web3Factory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web3.IntegrationTests\XUnitConfiguration.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web3\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\src\Nethereum.Web3\Web3.cs" />
+     <None Include="Assets\Plugins\Nethereum\testchain\Geth testnet faster mining\use fast geth executables if wanted.txt" />
+     <None Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.UnitTests\Expectations\Content\CSharp\ServiceGenerator.01.csharp.txt" />
+     <None Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.UnitTests\Expectations\Content\CSharp\FunctionOutputDTO.01.csharp.txt" />
+     <None Include="Assets\Plugins\Nethereum\src\Nethereum.ABI.Autogen\readme.txt" />
+     <None Include="Assets\Plugins\Nethereum\testchain\accountInfo.txt" />
+     <None Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.UnitTests\Expectations\Content\CSharp\ContractDeploymentCqsMessage.01.csharp.txt" />
+     <None Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.UnitTests\Expectations\Content\CSharp\EventDTO.01.csharp.txt" />
+     <None Include="Assets\Plugins\Nethereum\projects\Nethereum.Portable\Readme.txt" />
+     <None Include="Assets\Plugins\Nethereum\testchain\clique\pass.txt" />
+     <None Include="Assets\Plugins\Nethereum\testchain\PUT LATEST GETH HERE.txt" />
+     <None Include="Assets\Plugins\Nethereum\testchain\Geth testnet faster mining\DONT USE THIS, OLD AND EXPERIMENTAL.txt" />
+     <None Include="Assets\Plugins\Nethereum\src\Nethereum.ABI.Autogen\nuget\readme.txt" />
+     <None Include="Assets\Plugins\Nethereum\src\Nethereum.Generators.UnitTests\Expectations\Content\CSharp\FunctionCQSMessage.01.csharp.txt" />
+ <Reference Include="UnityEditor.StandardEvents">
+ <HintPath>/home/andrei/Documents/Programming/Projects/Test/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>/home/andrei/Documents/Programming/Projects/Test/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.BaselibModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CloudWebServicesModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FacebookModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticlesLegacyModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTrackingModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StyleSheetsModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TimelineModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WebModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WebGLModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XRModule">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Locator">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIAutomation">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/home/andrei/.config/unity3d/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>/home/andrei/.config/unity3d/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>/home/andrei/.config/unity3d/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Nethereum.Generators.DuoCode">
+ <HintPath>/home/andrei/Documents/Programming/Projects/Test/Assets/Plugins/Nethereum/src/Nethereum.Generators.DuoCode/scripts/Nethereum.Generators.DuoCode.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/home/andrei/Documents/Programming/Projects/Test/Assets/Plugins/Nethereum/lib/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript.Lang">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+ </Reference>
+ <Reference Include="Boo.Lang">
+ <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
