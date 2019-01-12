@@ -53,12 +53,14 @@
   <ItemGroup>
      <Compile Include="Assets\AddButton.cs" />
      <Compile Include="Assets\Arrow.cs" />
+     <Compile Include="Assets\BattleModule.cs" />
      <Compile Include="Assets\BattleState.cs" />
      <Compile Include="Assets\Controller.cs" />
      <Compile Include="Assets\CounterButton.cs" />
      <Compile Include="Assets\EthereumManager.cs" />
      <Compile Include="Assets\EthereumModule.cs" />
      <Compile Include="Assets\Fighter.cs" />
+     <Compile Include="Assets\HumanController.cs" />
      <Compile Include="Assets\ProceduralToolkit\Examples\Breakout\Breakout.cs" />
      <Compile Include="Assets\ProceduralToolkit\Examples\Breakout\BreakoutConfigurator.cs" />
      <Compile Include="Assets\ProceduralToolkit\Examples\Breakout\Brick.cs" />
@@ -130,6 +132,8 @@
      <Compile Include="Assets\ProceduralToolkit\Scripts\RandomE.cs" />
      <Compile Include="Assets\ProceduralToolkit\Scripts\TextureE.cs" />
      <Compile Include="Assets\ProceduralToolkit\Scripts\VectorE.cs" />
+     <Compile Include="Assets\SocketEvent.cs" />
+     <Compile Include="Assets\SocketManager.cs" />
      <None Include="Assets\ProceduralToolkit\Examples\SDF\Animation.shader" />
      <None Include="Assets\ProceduralToolkit\Shaders\Transitions.cginc" />
      <None Include="Assets\ProceduralToolkit\Shaders\VertexColor\Standard Vertex Color.shader" />
@@ -390,6 +394,9 @@
  <Reference Include="Nethereum.JsonRpc.Client">
  <HintPath>/home/andrei/Documents/Programming/Projects/Test/Assets/Plugins/Nethereum/Nethereum.JsonRpc.Client.dll</HintPath>
  </Reference>
+ <Reference Include="websocket-sharp">
+ <HintPath>/home/andrei/Documents/Programming/Projects/Test/Assets/Plugins/WebSockets/websocket-sharp.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/home/andrei/.config/unity3d/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
  </Reference>
@@ -426,6 +433,10 @@
  <Reference Include="Boo.Lang">
  <HintPath>/home/andrei/Unity-2018.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{6BCF1753-8618-A6C0-7F1D-4322E3AED478}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

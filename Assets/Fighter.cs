@@ -12,9 +12,9 @@ namespace EtherGame
 
 		Controller controller = null;
 
-		float speed = 0.1f;
+		float speed = 0.3f;
 
-		float turnSpeed = 0.5f;
+		float turnSpeed = 2.0f;
 
 		float lastArrowTimer = 0.0f;
 
@@ -22,30 +22,37 @@ namespace EtherGame
 		
 		void Start()
 		{
-			controller = new Controller();
+			
 		}
 
 		void Update()
 		{
 			lastArrowTimer += Time.deltaTime;
 
+			if(controller == null)
+				return;
+
 			controller.Refresh();
 
-			if(controller.IsDoing(FighterActions.MOVE_FORWARD))
+			if(controller.IsDoing(Actions.MOVE_FORWARD))
 			{
 				transform.position += transform.forward * speed;
 			}
+			else if(controller.IsDoing(Actions.MOVE_BACKWARDS))
+			{
+				transform.position -= transform.forward * speed;
+			}
 
-			if(controller.IsDoing(FighterActions.TURN_LEFTWARDS))
+			if(controller.IsDoing(Actions.TURN_LEFTWARDS))
 			{
 				transform.Rotate(transform.up, -turnSpeed);
 			}
-			else if(controller.IsDoing(FighterActions.TURN_RIGHTWARDS))
+			else if(controller.IsDoing(Actions.TURN_RIGHTWARDS))
 			{
 				transform.Rotate(transform.up, turnSpeed);
 			}
 
-			if(controller.IsDoing(FighterActions.SHOOT) && lastArrowTimer > arrowShootInterval)
+			if(controller.IsDoing(Actions.SHOOT) && lastArrowTimer > arrowShootInterval)
 			{
 				Shoot();	
 
@@ -57,12 +64,17 @@ namespace EtherGame
 			}
 		}
 
+		public void Initialize(Controller newController)
+		{
+			controller = newController;
+		}
+
 		void Shoot()
 		{
 			if(arrowPrefab == null)
 				return;
 
-			var arrowPosition = transform.position + transform.up * 0.3f + transform.forward;
+			var arrowPosition = transform.position + transform.up * 0.2f + transform.forward;
 			var arrowInstance = Instantiate(arrowPrefab, arrowPosition, transform.rotation);
 			if(arrowInstance == null)
 				return;
@@ -75,7 +87,7 @@ namespace EtherGame
 			if(arrow == null)
 				return;
 
-			arrow.Impulse = 2000.0f;
+			arrow.Impulse = 4000.0f;
 
 			lastArrowTimer = 0.0f;
 		}

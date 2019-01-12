@@ -5,9 +5,10 @@ using UnityEngine;
 
 namespace EtherGame
 {
-    public enum FighterActions
+    public enum Actions
     {
         MOVE_FORWARD,
+        MOVE_BACKWARDS,
         TURN_RIGHTWARDS,
         TURN_LEFTWARDS,
         SHOOT
@@ -15,33 +16,16 @@ namespace EtherGame
 
     public class Controller
     {
-        List<FighterActions> actions = new List<FighterActions>();
+        protected List<Actions> actions = new List<Actions>();
 
         public void Refresh()
         {
             actions.Clear();
 
-            if(Input.GetKey(KeyCode.W))
-            {
-                actions.Add(FighterActions.MOVE_FORWARD);
-            }
-            
-            if(Input.GetKey(KeyCode.A))
-            {
-                actions.Add(FighterActions.TURN_LEFTWARDS);
-            }
-            else if(Input.GetKey(KeyCode.D))
-            {
-                actions.Add(FighterActions.TURN_RIGHTWARDS);
-            }
-
-            if(Input.GetKey(KeyCode.Space))
-            {
-                actions.Add(FighterActions.SHOOT);
-            }
+            OnRefresh();
         }
 
-        public bool IsDoing(FighterActions otherAction)
+        public bool IsDoing(Actions otherAction)
         {
             foreach(var action in actions)
             {
@@ -51,5 +35,7 @@ namespace EtherGame
 
             return false;
         }
+
+        protected virtual void OnRefresh() {}
     }
 }

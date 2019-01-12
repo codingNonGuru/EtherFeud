@@ -340,6 +340,9 @@
  <Reference Include="Nethereum.JsonRpc.Client">
  <HintPath>/home/andrei/Documents/Programming/Projects/Test/Assets/Plugins/Nethereum/Nethereum.JsonRpc.Client.dll</HintPath>
  </Reference>
+ <Reference Include="websocket-sharp">
+ <HintPath>/home/andrei/Documents/Programming/Projects/Test/Assets/Plugins/WebSockets/websocket-sharp.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/home/andrei/.config/unity3d/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -387,6 +390,8 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{6BCF1753-8618-A6C0-7F1D-4322E3AED478}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{A513BC8D-6A7D-D6C5-EEBE-D27CF600D276}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>

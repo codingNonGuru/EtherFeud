@@ -9,47 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1534744020224768}
+  m_RootGameObject: {fileID: 1716199613815926}
   m_IsPrefabParent: 1
---- !u!1 &1534744020224768
+--- !u!1 &1716199613815926
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4751140844024174}
-  - component: {fileID: 33480500254400390}
-  - component: {fileID: 23184578266061738}
-  - component: {fileID: 54777038333145766}
-  - component: {fileID: 114798524197173720}
-  - component: {fileID: 64904979178200318}
+  - component: {fileID: 4007781649490802}
+  - component: {fileID: 114353648172461446}
+  - component: {fileID: 33713865355495028}
+  - component: {fileID: 23814127315488174}
+  - component: {fileID: 64757687214379344}
+  - component: {fileID: 54449269725384890}
   m_Layer: 0
-  m_Name: Arrow
+  m_Name: Fighter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4751140844024174
+--- !u!4 &4007781649490802
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534744020224768}
+  m_GameObject: {fileID: 1716199613815926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4561062, y: -1.6009369, z: 1.7076843}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23184578266061738
+--- !u!23 &23814127315488174
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534744020224768}
+  m_GameObject: {fileID: 1716199613815926}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -79,34 +79,34 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33480500254400390
+--- !u!33 &33713865355495028
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534744020224768}
-  m_Mesh: {fileID: 4300000, guid: d3295fc9bba41420dac3a11aaaf1a5d3, type: 3}
---- !u!54 &54777038333145766
+  m_GameObject: {fileID: 1716199613815926}
+  m_Mesh: {fileID: 4300000, guid: 5c3db4e4b98004a4d92fba0cc9a71a5a, type: 3}
+--- !u!54 &54449269725384890
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534744020224768}
+  m_GameObject: {fileID: 1716199613815926}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!64 &64904979178200318
+--- !u!64 &64757687214379344
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534744020224768}
+  m_GameObject: {fileID: 1716199613815926}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -114,17 +114,17 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: d3295fc9bba41420dac3a11aaaf1a5d3, type: 3}
---- !u!114 &114798524197173720
+  m_Mesh: {fileID: 4300000, guid: 5c3db4e4b98004a4d92fba0cc9a71a5a, type: 3}
+--- !u!114 &114353648172461446
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534744020224768}
+  m_GameObject: {fileID: 1716199613815926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d103fe87abc04270a4eb0df5efd85d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c3c6cb6095154421aaa7467131505df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloodSprayPrefab: {fileID: 1307625777009888, guid: b16029bdbe4e743e5a97e96dd630ba2c,
+  arrowPrefab: {fileID: 1534744020224768, guid: 2be5705f02b214145b6297639dd17c83,
     type: 2}
